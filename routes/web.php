@@ -14,8 +14,13 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/cinema', 'CinemaController@index');
-Route::get('/cinema/show', 'CinemaController@show');
+
+
+Route::get('/football','FootballController@index');
+Route::get('/football/match/{id}','FootballController@detail');
+
+//Route::get('/cinema', 'CinemaController@index');
+//Route::get('/cinema/show', 'CinemaController@show');
 
 
 
