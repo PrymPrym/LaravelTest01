@@ -10,6 +10,9 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 		<link rel="stylesheet" href="/css/app.css">
+		<link rel="stylesheet" href="/css/panbet_events.css">
+
+		
         <!-- Styles -->
         <style>
             html, body {
@@ -70,8 +73,8 @@
 		<table class='table table-bordered table-striped'>
 				<tr><td>{{ $content->comandOne }}</td></tr>
 				<tr><td>{{ $content->comandTwo }}</td></tr>
-				<tr><td>{{ $content->matchtime }}</td></tr>
-				<tr><td>{{ $content->htmlblock }}</td></tr>
+				<tr><td>{{ $content->matchtime }}</td></tr>				
 		</table>
+		{!! $content->htmlblock !!}
 	</div>
 </html>

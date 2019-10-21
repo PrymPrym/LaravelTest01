@@ -92,7 +92,6 @@ class FootballController extends Controller
 		$dom = new DOMDocument;		
 		$dom->loadHTML($content);
 		$element=$dom->getElementById('events_content');
-		$t=$element->ownerDocument->saveHTML($element);
 		$footbalmatch->htmlblock=$element->ownerDocument->saveHTML($element);
 		$footbalmatch->save();		
 		return view('match',['content'=>$footbalmatch]);	
